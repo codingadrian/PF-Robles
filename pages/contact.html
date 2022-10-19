@@ -1,32 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  
-    <!-- Icon Library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <!-- Bootstrap Library -->
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  
-    <!--  CSS Style -->
-    <!-- Normalize -->
-    <link rel="stylesheet" href="../css/reset.css">
-    <!-- Main CSS-->
-    <link rel="stylesheet" href="../css/main.css" />
-  
-    <title>Arruko</title>
-  
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <!-- Icon Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Bootstrap Library -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!--  CSS Style -->
+  <!-- Normalize -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <!-- Main CSS-->
+  <link rel="stylesheet" href="../css/main.css" />
+
+  <title>Arruko</title>
+
+</head>
 
 <body>
   <!-- header begins here -->
   <header>
+    <!-- navbar begins here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img class="navbar-brand__logo" src="../images/logos/main-logo.svg" alt="Arruko Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/tutorials.html">Tutorials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
 
   </header>
   <!-- header begins here -->
@@ -75,7 +104,21 @@
     </form>
   </section>
 
-
+  <!-- footer begins here -->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center border-top sticky-bottom">
+    <div class="my-3 d-flex align-items-center">
+      <!-- copyrights and author-->
+      <span class="text-muted">&copy; By Adrian Robles F</span>
+    </div>
+    <!-- footer icons -->
+    <ul class="nav justify-content-end list-unstyled d-flex">
+      <li class="mx-3"><a class="fa fa-facebook text-muted text-decoration-none" href="#"></a></li>
+      <li class="mx-3"><a class="fa fa-twitter text-muted text-decoration-none" href="#"></a></li>
+      <li class="mx-3"><a class="fa fa-instagram text-muted text-decoration-none" href="#"></a></li>
+    </ul>
+    <!-- end of footer icons-->
+  </footer>
+  <!-- footer ends here -->
 
 
   <!-- JS Scripts -->
