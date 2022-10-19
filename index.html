@@ -6,91 +6,92 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <script src="./scripts/scripts.js"></script>
+  <!-- Libraries and Styles begin here -->
   <!-- Icon Library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <!--  CSS Style -->
+  <!-- Bootstrap Library -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <!-- Normalize -->
   <link rel="stylesheet" href="./css/reset.css">
+  <!-- Main CSS-->
   <link rel="stylesheet" href="./css/main.css" />
+  <!-- Libraries and Styles end here -->
 
   <title>Arruko</title>
+
 </head>
 
 <body>
+  <!-- header begins here -->
   <header>
-    <!-- navbar begins here -->
-    <nav>
-      <a href="./index.html"><img src="./images/main-logo.svg" /></a>
-      <input id="menu-toggle" type="checkbox" />
-      <label class='menu-button-container' for="menu-toggle">
-        <div class='menu-button'></div>
-      </label>
-      <ul class="menu">
-        <li><a href="./pages/blog.html">Blog</a></li>
-        <li><a href="./pages/tutorials.html">Tutorials</a></li>
-        <li><a href="./pages/events.html">Events</a></li>
-        <li><a href="./pages/contact.html">Contact</a></li>
-      </ul>
-    </nav>
 
-    <!-- navbar ends here -->
   </header>
+  <!-- header begins here -->
+
+
 
   <!-- main begins here -->
-  <main>
-    <section>
-      <img class="header__section__img" src="./images/male-model.webp" alt="picture of the author" />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-        neque, ratione alias nisi maiores magni? Ab quis laboriosam atque
-        dolorum sunt facere autem enim tempora, perspiciatis laudantium
-        numquam earum nemo.
-      </p>
+  <main class="container-fluid about">
+    <section class="about__intro">
+      <!-- image for mobile display-->
+      <img src="./images/home/male-model-half.png" alt="Avatar of the author" class="about__avatar img-fluid">
+      <!-- image for desktop display-->
+      <img class="about__avatar--large" src="./images/home/male-model.webp" alt="picture of the author" />
+      <figure class="text-center">
+        <blockquote class="about__quote blockquote">
+            <span>Hi, my name is Adrian, and I'm here to show you what I do and how I do it, I
+              promise this
+              will be an experience for both of us.</span>
+        </blockquote>
+      </figure>
     </section>
 
-    <section>
+    <section class="about__items">
+      <div class="about__who">
+        <h3>Who am I?</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+          necessitatibus tenetur impedit! Illum quasi harum, laboriosam iusto ea
+          veniam fugiat repellendus ratione, numquam atque distinctio nulla!
+          Architecto blanditiis cum odio!
+        </p>
+      </div>
 
-      <h2>Who am I?</h2>
-
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
-        necessitatibus tenetur impedit! Illum quasi harum, laboriosam iusto ea
-        veniam fugiat repellendus ratione, numquam atque distinctio nulla!
-        Architecto blanditiis cum odio!
-      </p>
-
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
-        eveniet, mollitia voluptate repudiandae alias quaerat deserunt odio
-        tenetur quod vero tempore animi neque dolorem molestias eaque dolore
-        officiis culpa architecto!
-      </p>
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum
-        maiores aspernatur temporibus esse asperiores optio unde similique
-        expedita laudantium ab aut rerum illo quia assumenda placeat, ea minima,
-        voluptas aliquid!
-      </p>
+      <div class="about_what">
+        <h3>What do I do?</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+          eveniet, mollitia voluptate repudiandae alias quaerat deserunt odio
+          tenetur quod vero tempore animi neque dolorem molestias eaque dolore
+          officiis culpa architecto!
+        </p>
+      </div>
+      <div class="about_how">
+        <h3>How do I do it?</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum
+          maiores aspernatur temporibus esse asperiores optio unde similique
+          expedita laudantium ab aut rerum illo quia assumenda placeat, ea minima,
+          voluptas aliquid!
+        </p>
+      </div>
     </section>
   </main>
 
   <!-- main ends here -->
 
-  <!-- footer begins here -->
-  <footer>
-    <span>&copy;</span>
-    <!-- copyrights -->
-    <span>By Adrian Robles</span>
-    <!-- author -->
-    <ul class="footer__ul">
-      <li class="footer_ul_li"><a href="" class="fa fa-facebook"></a></li>
-      <li class="footer_ul_li"><a href="" class="fa fa-twitter"></a></li>
-      <li class="footer_ul_li"><a href="" class="fa fa-instagram"></a></li>
-    </ul>
-  </footer>
-  <!-- footer ends here -->
+
+
+
+
+
+  <!-- JS Scripts -->
+  <script src="./scripts/scripts.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
