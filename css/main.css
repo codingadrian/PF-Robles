@@ -18,58 +18,87 @@ body {
   padding: 0 10px;
 }
 
-
-
-
+header {
+  margin-bottom: 1vh;
+}
 
 
 /* navbar begins here */
 .navbar {
   font-size: 1.5rem;
+  border-bottom: 1px solid #c2c2c2;
+  width: 95vw;
+  margin: auto;
 }
 
+
 .navbar-brand__logo {
-  width: 14%;
+  width: 18%;
   float: left;
 }
+
 
 .navbar-toggler {
   border: #000 1px solid !important;
   font-size: 2rem;
 }
-
-
-
 /* navbar ends here */
 
 
 /* main section begins here */
-
-.about__avatar {
-  vertical-align: middle;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
+.about__intro {
+  background-image: url(../images/home/coder-gear.webp);
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 4vh;
+  border-radius: 5px;
 }
 
 
-.about__avatar--large {
-  display: none;
-}
-
-.about__quote {
+.about__intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.8rem;
-  color: #808080;
+  color: #fff;
+  text-align: center;
 }
+
+.about__intro h2 {
+  font-size: 5rem;
+}
+
+.about__intro p {
+  font-size: 2rem;
+}
+
+
+.about__items {
+  text-align: center;
+}
+
 
 .about__items div {
   margin-bottom: 5vh;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.about__items div h3 {
+  text-transform: uppercase;
+}
+
+.about__quote p {
+  font-size: 1.5rem;
+  color: #a1a1a1;
+  font-style: oblique;
+  text-align: center;
+}
 
 /* main section ends here */
-
-
 
 
 /* footer begins here */
@@ -77,10 +106,42 @@ footer {
   font-size: 14px;
   font-size: 1.4rem;
   background-color: #fff;
+  padding: 1vh 1vw;
 }
+
 
 footer a {
   display: inline-block;
 }
-
 /* footer ends here */
+
+
+/* MEDIA QUERY begins here */
+@media only screen and (min-width: 992px) {
+
+  body {
+    width: 85vw;
+    margin: auto;
+  }
+
+  .navbar {
+    width: 80vw;
+    margin: auto;
+  }
+
+  /* main section begins here */
+
+
+
+ 
+
+  .about__items div:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+
+  /* main section ends here */
+}
+
+/* MEDIA QUERY begins here */
