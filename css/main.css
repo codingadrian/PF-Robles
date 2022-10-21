@@ -42,9 +42,10 @@ header {
   border: #000 1px solid !important;
   font-size: 2rem;
 }
+
 /* navbar ends here */
 
-
+/* index.html begins here */
 /* main section begins here */
 .about__intro {
   background-image: url(../images/home/coder-gear.webp);
@@ -113,9 +114,44 @@ footer {
 footer a {
   display: inline-block;
 }
+
 /* footer ends here */
 
 
+/* blog.html begins here */
+
+.blog__header {
+  background-image: url(../images/blog/typewriter-main.webp);
+  height: 25vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 4vh;
+  border-radius: 5px;
+}
+
+.blog__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+}
+
+
+.blog__intro {
+  margin: 2vh 0;
+  border-bottom: 1px solid #c2c2c2;
+}
+
+
+
+/* blog.html ends here */
+
+
+
+/* ************************ */
 /* MEDIA QUERY begins here */
 @media only screen and (min-width: 992px) {
 
@@ -129,19 +165,46 @@ footer a {
     margin: auto;
   }
 
+  /* index.html begins here */
+
   /* main section begins here */
-
-
-
- 
-
   .about__items div:hover {
     background-color: #000;
     color: #fff;
   }
 
-
   /* main section ends here */
+
+  /* index.html ends here */
+
+
+  /* blog.html begins here */
+
+  .blog__header p {
+    width: 45vw;
+  }
+
+  .blog__intro {
+    margin: 2vh 0;
+    border-bottom: 1px solid #c2c2c2;
+  }
+
+  .blog__img {
+    width: 30vw;
+    height: 30vh;
+  }
+
+  .blog__img:hover {
+    filter: grayscale(100%);
+  }
+
+  .blog__item--one img {
+    width: 55vw;
+    height: 45vh;
+  }
+
+
+  /* blog.html ends here */
 }
 
-/* MEDIA QUERY begins here */
+/* MEDIA QUERY ends here */
