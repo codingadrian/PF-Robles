@@ -1,9 +1,7 @@
-
-  /* blog.html begins here */
-  
-  .blog__header {
-    background-image: url(../../assets/images/typewriter-main.webp);
-    height: 25vh;
+  /* tutorials.html begins here */
+  .tutorial__header {
+    background-image: url(../images/typewriter-main.webp);
+    height: 25vh;  
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -11,7 +9,7 @@
     border-radius: 5px;
   }
   
-  .blog__header {
+  .tutorial__header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,4 +26,4 @@
   
   
   
-  /* blog.html ends here */
+  /* tutorials.html ends here */

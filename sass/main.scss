@@ -1,10 +1,12 @@
 
-@use './base/reset';
-@use './base/parent';
-@use './pages/home';
-@use './pages/blog';
-@use './layout/navbar';
-@use './layout/footer';
+@import './base/reset';
+@import './base/parent';
+@import './pages/home';
+@import './pages/blog';
+@import './pages/tutorials';
+@import './layout/navbar';
+@import './layout/footer';
+
 
 
 
