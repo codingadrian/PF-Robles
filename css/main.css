@@ -148,6 +148,8 @@ header {
   font-size: 1.8rem;
   color: #fff;
   text-align: center; }
+  .blog__header h2 {
+    font-size: 5rem; }
 
 .tutorial__items a {
   text-decoration: none;
