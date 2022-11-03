@@ -1,12 +1,80 @@
+/***
+    The new CSS reset - version 1.7.3 (last updated 7.8.2022)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert; }
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+  cursor: revert; }
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+  list-style: none; }
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%; }
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse; }
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input, textarea {
+  -webkit-user-select: auto; }
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert; }
+
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  appearance: revert; }
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+  color: unset; }
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none; }
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable="false"])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto; }
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+  -webkit-user-drag: element; }
+
 /* parent css */
 html {
   font-size: 62.5%;
   /* Now 10px = 1rem! */
   scroll-behavior: smooth;
   width: 100vw;
-  height: 100vh;
-}
-
+  height: 100vh; }
 
 body {
   font-size: 16px;
@@ -15,48 +83,20 @@ body {
   /* default font-size for document */
   line-height: 1.5;
   height: 100vh;
-  padding: 0 10px;
-}
+  padding: 0 10px; }
 
 header {
-  margin-bottom: 1vh;
-}
+  margin-bottom: 1vh; }
 
-
-/* navbar begins here */
-.navbar {
-  font-size: 1.5rem;
-  border-bottom: 1px solid #c2c2c2;
-  width: 95vw;
-  margin: auto;
-}
-
-
-.navbar-brand__logo {
-  width: 18%;
-  float: left;
-}
-
-
-.navbar-toggler {
-  border: #000 1px solid !important;
-  font-size: 2rem;
-}
-
-/* navbar ends here */
-
-/* index.html begins here */
 /* main section begins here */
 .about__intro {
-  background-image: url(../images/home/coder-gear.webp);
+  background-image: url(../images/coder-gear.webp);
   height: 65vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-bottom: 4vh;
-  border-radius: 5px;
-}
-
+  border-radius: 5px; }
 
 .about__intro {
   display: flex;
@@ -64,71 +104,42 @@ header {
   justify-content: center;
   font-size: 1.8rem;
   color: #fff;
-  text-align: center;
-}
+  text-align: center; }
 
 .about__intro h2 {
-  font-size: 5rem;
-}
+  font-size: 5rem; }
 
 .about__intro p {
-  font-size: 2rem;
-}
-
+  font-size: 2rem; }
 
 .about__items {
-  text-align: center;
-}
-
+  text-align: center; }
 
 .about__items div {
   margin-bottom: 5vh;
   border-radius: 5px;
   padding: 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .about__items div h3 {
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .about__quote p {
   font-size: 1.5rem;
   color: #a1a1a1;
   font-style: oblique;
-  text-align: center;
-}
+  text-align: center; }
 
 /* main section ends here */
-
-
-/* footer begins here */
-footer {
-  font-size: 14px;
-  font-size: 1.4rem;
-  background-color: #fff;
-  padding: 1vh 1vw;
-}
-
-
-footer a {
-  display: inline-block;
-}
-
-/* footer ends here */
-
-
 /* blog.html begins here */
-
 .blog__header {
-  background-image: url(../images/blog/typewriter-main.webp);
+  background-image: url(../images/typewriter-main.webp);
   height: 25vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-bottom: 4vh;
-  border-radius: 5px;
-}
+  border-radius: 5px; }
 
 .blog__header {
   display: flex;
@@ -136,75 +147,104 @@ footer a {
   justify-content: center;
   font-size: 1.8rem;
   color: #fff;
-  text-align: center;
-}
+  text-align: center; }
 
+.tutorial__items a {
+  text-decoration: none;
+  color: black; }
+
+.tutorial__image {
+  margin-bottom: 1vh; }
+
+.tutorial__desc {
+  margin-bottom: 3vh;
+  border-bottom: 1px solid gray; }
 
 .blog__intro {
   margin: 2vh 0;
-  border-bottom: 1px solid #c2c2c2;
-}
-
-
+  border-bottom: 1px solid #c2c2c2; }
 
 /* blog.html ends here */
+/* tutorials.html begins here */
+.tutorial__header {
+  background-image: url(../images/typewriter-main.webp);
+  height: 25vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 4vh;
+  border-radius: 5px; }
 
+.tutorial__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center; }
 
+.blog__intro {
+  margin: 2vh 0;
+  border-bottom: 1px solid #c2c2c2; }
 
+/* tutorials.html ends here */
+/* navbar begins here */
+.navbar {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #c2c2c2;
+  width: 95vw;
+  margin: auto; }
+
+.navbar-brand__logo {
+  width: 18%;
+  float: left; }
+
+.navbar-toggler {
+  border: #000 1px solid !important;
+  font-size: 2rem; }
+
+/* navbar ends here */
+/* footer begins here */
+footer {
+  font-size: 14px;
+  font-size: 1.4rem;
+  background-color: #fff;
+  padding: 1vh 1vw; }
+
+footer a {
+  display: inline-block; }
+
+/* footer ends here */
 /* ************************ */
 /* MEDIA QUERY begins here */
 @media only screen and (min-width: 992px) {
-
   body {
     width: 85vw;
-    margin: auto;
-  }
-
+    margin: auto; }
   .navbar {
     width: 80vw;
-    margin: auto;
-  }
-
+    margin: auto; }
   /* index.html begins here */
-
   /* main section begins here */
   .about__items div:hover {
     background-color: #000;
-    color: #fff;
-  }
-
+    color: #fff; }
   /* main section ends here */
-
   /* index.html ends here */
-
-
   /* blog.html begins here */
-
   .blog__header p {
-    width: 45vw;
-  }
-
+    width: 45vw; }
   .blog__intro {
     margin: 2vh 0;
-    border-bottom: 1px solid #c2c2c2;
-  }
-
+    border-bottom: 1px solid #c2c2c2; }
   .blog__img {
     width: 30vw;
-    height: 30vh;
-  }
-
+    height: 30vh; }
   .blog__img:hover {
-    filter: grayscale(100%);
-  }
-
+    filter: grayscale(100%); }
   .blog__item--one img {
     width: 55vw;
-    height: 45vh;
-  }
-
-
-  /* blog.html ends here */
-}
+    height: 45vh; }
+  /* blog.html ends here */ }
 
 /* MEDIA QUERY ends here */

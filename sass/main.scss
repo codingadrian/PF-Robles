@@ -1,0 +1,71 @@
+
+@import './base/reset';
+@import './base/parent';
+@import './pages/home';
+@import './pages/blog';
+@import './pages/tutorials';
+@import './layout/navbar';
+@import './layout/footer';
+
+
+
+
+  
+  
+  /* ************************ */
+  /* MEDIA QUERY begins here */
+  @media only screen and (min-width: 992px) {
+  
+    body {
+      width: 85vw;
+      margin: auto;
+    }
+  
+    .navbar {
+      width: 80vw;
+      margin: auto;
+    }
+  
+    /* index.html begins here */
+  
+    /* main section begins here */
+    .about__items div:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  
+    /* main section ends here */
+  
+    /* index.html ends here */
+  
+  
+    /* blog.html begins here */
+  
+    .blog__header p {
+      width: 45vw;
+    }
+  
+    .blog__intro {
+      margin: 2vh 0;
+      border-bottom: 1px solid #c2c2c2;
+    }
+  
+    .blog__img {
+      width: 30vw;
+      height: 30vh;
+    }
+  
+    .blog__img:hover {
+      filter: grayscale(100%);
+    }
+  
+    .blog__item--one img {
+      width: 55vw;
+      height: 45vh;
+    }
+  
+  
+    /* blog.html ends here */
+  }
+  
+  /* MEDIA QUERY ends here */

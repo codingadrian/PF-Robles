@@ -1,0 +1,29 @@
+  /* tutorials.html begins here */
+  .tutorial__header {
+    background-image: url(../images/typewriter-main.webp);
+    height: 25vh;  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 4vh;
+    border-radius: 5px;
+  }
+  
+  .tutorial__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: #fff;
+    text-align: center;
+  }
+  
+  
+  .blog__intro {
+    margin: 2vh 0;
+    border-bottom: 1px solid #c2c2c2;
+  }
+  
+  
+  
+  /* tutorials.html ends here */
