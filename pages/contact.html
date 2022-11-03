@@ -20,7 +20,8 @@
 
   <title>Arruko - Contact</title>
   <link rel="icon" type="image/x-icon" href="../images/main-logo.ico">
-  <meta name="description" content="If you have ideas, suggestions, interesting topics or just want to meet, let us know!">
+  <meta name="description"
+    content="If you have ideas, suggestions, interesting topics or just want to meet, let us know!">
   <meta name="keywords" content="ideas, meeting, suggestions, blockchain">
 
 </head>
@@ -61,47 +62,56 @@
   </header>
   <!-- header begins here -->
 
-  <main>
-    <h2>Want to talk?</h2>
-    <p>
-      We are always looking to make new friends to share this technology with, and want to hear about ideas and projects that use it and have a positive impact in our society.
-    </p>
+  <main class="contact">
+    <section class="contact__header">
+      <div>
+        <h2>Want to talk?</h2>
+        <p>
+          We are always looking to make new friends...
+        </p>
+      </div>
+    </section>
+
+
+    <section class="contact__form">
+      <form action="">
+        <div class="contact__item">
+          <div>
+            <label for="fname">First Name</label>
+          </div>
+          <div>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+          </div>
+        </div>
+        <div class="contact__item">
+          <div>
+            <label for="lname">Last Name</label>
+          </div>
+          <div>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+          </div>
+        </div>
+
+        <div class="contact__item">
+          <div>
+            <label for="message">Message</label>
+          </div>
+          <div>
+            <textarea rows="2" cols="31" wrap="hard" id="message" name="message" placeholder="Write something.." style="height: 200px"></textarea>
+          </div>
+        </div>
+        <br />
+        <div class="contact__btn">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </section>
+    <section class="about__quote">
+      <p>
+        "The blockchain is a set of multiple links forming a great chain, a this community is a chain of learners."
+      </p>
+    </section>
   </main>
-
-  <section>
-    <form action="">
-      <div>
-        <div>
-          <label for="fname">First Name</label>
-        </div>
-        <div>
-          <input type="text" id="fname" name="firstname" placeholder="Your name.." />
-        </div>
-      </div>
-      <div>
-        <div>
-          <label for="lname">Last Name</label>
-        </div>
-        <div>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
-        </div>
-      </div>
-
-      <div>
-        <div>
-          <label for="message">Message</label>
-        </div>
-        <div>
-          <textarea id="message" name="message" placeholder="Write something.." style="height: 200px"></textarea>
-        </div>
-      </div>
-      <br />
-      <div>
-        <input type="submit" value="Submit" />
-      </div>
-    </form>
-  </section>
-
   <!-- footer begins here -->
   <footer class="d-flex flex-wrap justify-content-between align-items-center border-top sticky-bottom">
     <div class="col-md-4 d-flex align-items-center">

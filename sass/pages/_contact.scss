@@ -1,0 +1,56 @@
+/* contact.html begins here */
+
+.contact__header {
+    background-image: url(../images/page-banner.jpg);
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 4vh;
+    border-radius: 5px;
+}
+
+.contact__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 0 2vw;
+    text-align: center;
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+}
+
+.contact__form {
+    background-color: black;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: #fff;
+    border-radius: 5px;
+    .contact__item {
+        border: 1px solid gray;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+}
+
+
+
+
+.contact__btn {
+    border: 1px solid gray;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+
+/* contact.html ends here */

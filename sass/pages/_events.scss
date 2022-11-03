@@ -1,0 +1,66 @@
+/* events.html begins here */
+
+.events__header {
+    background-image: url(../images/page-banner.jpg);
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 4vh;
+    border-radius: 5px;
+}
+
+.events__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 0 2vw;
+    text-align: center;
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+}
+
+.events__monthName {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.events__catLinks {
+    margin-bottom: 2vh;
+    align-content: space-around;
+    border-bottom: 1px solid #c2c2c2;
+
+    a {
+        color: black;
+    }
+}
+
+.event__img {
+    margin-bottom: 1vh;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.event__btn {
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 1vh;
+    cursor: pointer;
+}
+
+
+
+/* events.html ends here */
