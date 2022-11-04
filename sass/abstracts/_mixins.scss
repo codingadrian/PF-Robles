@@ -1,0 +1,11 @@
+
+
+@mixin pageHeader {
+    background-image: url(../images/page-banner.jpg);
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 4vh;
+    border-radius: 5px;
+}

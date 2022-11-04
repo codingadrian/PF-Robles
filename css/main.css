@@ -1,3 +1,11 @@
+/* Table of Contents
+----------------------
+-- base imports
+-- layouts
+-- pages
+-- abstracts
+*/
+/* base imports */
 /***
     The new CSS reset - version 1.7.3 (last updated 7.8.2022)
     GitHub page: https://github.com/elad2412/the-new-css-reset
@@ -6,6 +14,7 @@
     Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
     - The "symbol *" part is to solve Firefox SVG sprite bug
  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
   all: unset;
   display: revert; }
@@ -69,12 +78,16 @@ meter {
   -webkit-user-drag: element; }
 
 /* parent css */
+/* main and default font */
+/* color fonts */
 html {
   font-size: 62.5%;
   /* Now 10px = 1rem! */
   scroll-behavior: smooth;
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  color: #fff; }
 
 body {
   font-size: 16px;
@@ -88,7 +101,38 @@ body {
 header {
   margin-bottom: 1vh; }
 
+/* layouts */
+/* navbar begins here */
+.navbar {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #c2c2c2;
+  width: 95vw;
+  margin: auto; }
+
+.navbar-brand__logo {
+  width: 18%;
+  float: left; }
+
+.navbar-toggler {
+  border: #000 1px solid !important;
+  font-size: 2rem; }
+
+/* navbar ends here */
+/* footer begins here */
+footer {
+  font-size: 14px;
+  font-size: 1.4rem;
+  background-color: #fff;
+  padding: 1vh 1vw; }
+
+footer a {
+  display: inline-block; }
+
+/* footer ends here */
+/* pages */
 /* main section begins here */
+/* main and default font */
+/* color fonts */
 .about__intro {
   background-image: url(../images/coder-gear.webp);
   height: 65vh;
@@ -203,15 +247,6 @@ header {
 /* tutorials.html ends here */
 /* contact.html begins here */
 .contact__header {
-  background-image: url(../images/page-banner.jpg);
-  height: 25vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-bottom: 4vh;
-  border-radius: 5px; }
-
-.contact__header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -293,33 +328,9 @@ header {
   cursor: pointer; }
 
 /* events.html ends here */
-/* navbar begins here */
-.navbar {
-  font-size: 1.5rem;
-  border-bottom: 1px solid #c2c2c2;
-  width: 95vw;
-  margin: auto; }
-
-.navbar-brand__logo {
-  width: 18%;
-  float: left; }
-
-.navbar-toggler {
-  border: #000 1px solid !important;
-  font-size: 2rem; }
-
-/* navbar ends here */
-/* footer begins here */
-footer {
-  font-size: 14px;
-  font-size: 1.4rem;
-  background-color: #fff;
-  padding: 1vh 1vw; }
-
-footer a {
-  display: inline-block; }
-
-/* footer ends here */
+/* abstracts */
+/* main and default font */
+/* color fonts */
 /* ************************ */
 /* MEDIA QUERY begins here */
 @media only screen and (min-width: 992px) {

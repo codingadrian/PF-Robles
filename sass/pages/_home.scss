@@ -1,4 +1,8 @@
 /* main section begins here */
+
+@import '../abstracts/variables';
+
+
 .about__intro {
     background-image: url(../images/coder-gear.webp);
     height: 65vh;
@@ -15,7 +19,7 @@
     align-items: center;
     justify-content: center;
     font-size: 1.8rem;
-    color: #fff;
+    color: $myPrimaryColor;
     text-align: center;
   }
   

@@ -1,5 +1,6 @@
 /* parent css */
 
+@import '../abstracts/variables';
 
 html {
     font-size: 62.5%;
@@ -7,6 +8,8 @@ html {
     scroll-behavior: smooth;
     width: 100vw;
     height: 100vh;
+    font-family: $myFont;
+    color: $myPrimaryColor;
   }
   
   
