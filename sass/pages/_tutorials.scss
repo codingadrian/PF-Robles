@@ -16,22 +16,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: $myPrimaryColor;
     padding: 0 2vw;
     text-align: center;
   
     h2 {
-      font-size: 4rem;
+      font-size: $fontSizeH2;
     }
   
     p {
-      font-size: 1.6rem;
+      font-size: $fontSizeP;
     }
   }
   
   .tutorial__items a {
     text-decoration: none;
-    color: black;
+    color: $mySecondaryColor;
   }
   
   .tutorial__img {
@@ -48,7 +48,7 @@
   @include for-desktop-up {
     .tutorial__list {
       margin: 2vh 0;
-      border-bottom: 1px solid #c2c2c2;
+      border-bottom: $borderMain;
     }
   
 
@@ -56,7 +56,7 @@
  
   .tutorial__desc {
     margin: 2vh 0;
-    border-bottom: 1px solid #c2c2c2;
+    border-bottom: $borderMain;
 
     @include for-desktop-up {
       margin: 0;

@@ -16,16 +16,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: $myPrimaryColor;
     padding: 0 2vw;
     text-align: center;
 
     h2 {
-        font-size: 4rem;
+        font-size: $fontSizeH2;
     }
 
     p {
-        font-size: 1.6rem;
+        font-size: $fontSizeP;
     }
 }
 
@@ -35,7 +35,7 @@
 }
 
 .events__month {
-    border-bottom: 1px solid #c2c2c2;
+    border-bottom: $borderMain;
     margin-bottom: 1vh;
 }
 
@@ -55,7 +55,7 @@
 
 
     a {
-        color: black;
+        color: $mySecondaryColor;
     }
 }
 
@@ -73,10 +73,10 @@
 }
 
 .event__btn {
-    background-color: black;
+    background-color: $mySecondaryColor;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: $myPrimaryColor;
     text-align: center;
     text-decoration: none;
     display: inline-block;

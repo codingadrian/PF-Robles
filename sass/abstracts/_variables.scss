@@ -3,9 +3,24 @@
 /* main and default font */
 $myFont: 'Montserrat', sans-serif;
 
-/* color fonts */
+
+/* diff font sizes */
+$fontSizeH2: 4rem;
+$fontSizeP: 1.6rem;
+
+
+/* font colors */
 $myPrimaryColor: #fff;
 $mySecondaryColor: #000;
+$myThirdColor: #101011;
+$myFourthColor:  #373744;
+$myQuoteColor: #a1a1a1;
 
+/* background colors */
+$myBackgroundColor: #000;
 
+/* borders */
+
+$borderColor: #c2c2c2;
+$borderMain: 1px solid $borderColor;
 

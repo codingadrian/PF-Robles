@@ -4,6 +4,13 @@
     border-bottom: 1px solid #c2c2c2;
     width: 95vw;
     margin: auto;
+
+    @include for-desktop-up {
+      .navbar {
+        width: 80vw;
+        margin: auto;
+      }
+    }
   }
   
   
