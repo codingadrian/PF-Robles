@@ -1,5 +1,7 @@
 /* blog.html begins here */
 
+@import '../abstracts/mixins';
+
 .blog__header {
   background-image: url(../images/page-banner.jpg);
   height: 25vh;
@@ -27,6 +29,26 @@
   }
 }
 
+.blog__intro {
+  margin: 2vh 0;
+  border-bottom: 1px solid #c2c2c2;
+
+  @include for-desktop-up {
+    margin: 0;
+    border-bottom: none;
+    
+  }
+}
+
+
+
+@include for-desktop-up {
+  .blog__items--one, .blog__items--two {
+    margin: 2vh 0;
+    border-bottom: 1px solid #c2c2c2;
+    }
+}
+
 .blog a {
   text-decoration: none;
   color: black;
@@ -35,11 +57,6 @@
 .blog__img {
   margin-bottom: 1vh;
   border-radius: 5px;
-}
-
-.blog__intro {
-  margin: 2vh 0;
-  border-bottom: 1px solid #c2c2c2;
 }
 
 /* blog.html ends here */

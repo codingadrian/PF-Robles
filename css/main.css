@@ -197,6 +197,19 @@ footer a {
   .blog__header p {
     font-size: 1.6rem; }
 
+.blog__intro {
+  margin: 2vh 0;
+  border-bottom: 1px solid #c2c2c2; }
+  @media (min-width: 1200px) {
+    .blog__intro {
+      margin: 0;
+      border-bottom: none; } }
+
+@media (min-width: 1200px) {
+  .blog__items--one, .blog__items--two {
+    margin: 2vh 0;
+    border-bottom: 1px solid #c2c2c2; } }
+
 .blog a {
   text-decoration: none;
   color: black; }
@@ -204,10 +217,6 @@ footer a {
 .blog__img {
   margin-bottom: 1vh;
   border-radius: 5px; }
-
-.blog__intro {
-  margin: 2vh 0;
-  border-bottom: 1px solid #c2c2c2; }
 
 /* blog.html ends here */
 /* tutorials.html begins here */
@@ -239,13 +248,37 @@ footer a {
 .tutorial__img {
   margin-bottom: 1vh;
   border-radius: 5px; }
+  @media (min-width: 1200px) {
+    .tutorial__img {
+      height: 25vh;
+      width: 30vw; } }
+
+@media (min-width: 1200px) {
+  .tutorial__list {
+    margin: 2vh 0;
+    border-bottom: 1px solid #c2c2c2; } }
 
 .tutorial__desc {
   margin: 2vh 0;
   border-bottom: 1px solid #c2c2c2; }
+  @media (min-width: 1200px) {
+    .tutorial__desc {
+      margin: 0;
+      border-bottom: none; } }
 
 /* tutorials.html ends here */
 /* contact.html begins here */
+/* main and default font */
+/* color fonts */
+.contact__header {
+  background-image: url(../images/page-banner.jpg);
+  height: 25vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 4vh;
+  border-radius: 5px; }
+
 .contact__header {
   display: flex;
   align-items: center;
@@ -350,9 +383,6 @@ footer a {
   /* blog.html begins here */
   .blog__header p {
     width: 45vw; }
-  .blog__intro {
-    margin: 2vh 0;
-    border-bottom: 1px solid #c2c2c2; }
   .blog__img {
     width: 30vw;
     height: 30vh; }

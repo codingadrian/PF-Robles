@@ -1,5 +1,7 @@
   /* tutorials.html begins here */
 
+  @import '../abstracts/mixins';
+
   .tutorial__header {
     background-image: url(../images/page-banner.jpg);
     height: 25vh;
@@ -35,11 +37,31 @@
   .tutorial__img {
     margin-bottom: 1vh;
     border-radius: 5px;
+    
+    @include for-desktop-up {
+
+      height: 25vh;
+      width: 30vw;
+    }
   }
   
+  @include for-desktop-up {
+    .tutorial__list {
+      margin: 2vh 0;
+      border-bottom: 1px solid #c2c2c2;
+    }
+  
+
+  }
+ 
   .tutorial__desc {
     margin: 2vh 0;
     border-bottom: 1px solid #c2c2c2;
+
+    @include for-desktop-up {
+      margin: 0;
+      border-bottom: none;
+    }
   }
   
   

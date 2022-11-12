@@ -1,5 +1,8 @@
 /* contact.html begins here */
 
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
 .contact__header {
     @include pageHeader;
 }
@@ -27,6 +30,7 @@
     margin-bottom: 5px;
     color: #fff;
     border-radius: 5px;
+
     .contact__item {
         border: 1px solid gray;
         padding: 5px;
