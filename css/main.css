@@ -336,10 +336,21 @@ footer a {
   font-size: 2rem;
   font-weight: bold; }
 
+.events__month {
+  border-bottom: 1px solid #c2c2c2;
+  margin-bottom: 1vh; }
+
+.event__dates {
+  justify-content: space-around;
+  align-items: center;
+  align-content: center; }
+
+.events__item {
+  padding: 0 1vw; }
+
 .events__catLinks {
   margin-bottom: 2vh;
-  align-content: space-around;
-  border-bottom: 1px solid #c2c2c2; }
+  align-content: space-around; }
   .events__catLinks a {
     color: black; }
 
@@ -348,10 +359,15 @@ footer a {
   border-radius: 5px;
   width: 100%;
   height: auto; }
+  @media (min-width: 1200px) {
+    .event__img {
+      width: 20%;
+      height: auto; } }
 
 .event__btn {
   background-color: black;
   border: none;
+  border-radius: 5px;
   color: white;
   text-align: center;
   text-decoration: none;
